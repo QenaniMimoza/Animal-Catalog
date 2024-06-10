@@ -1,0 +1,53 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Catalog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Animal Catalog</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="loadAnimals('dogs')">Dogs</a></li>
+                <li><a href="#" onclick="loadAnimals('cats')">Cats</a></li>
+                <li><a href="#" onclick="loadAnimals('birds')">Birds</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+      
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to our Animal Catalog. We provide information about various animals including dogs, cats, and birds.</p>
+        </section>
+
+        <section id="gallery">
+            <h2>Animal Gallery</h2>
+            <input type="text" id="search-bar" placeholder="Search by name..." oninput="searchAnimals()">
+            <div id="animal-cards"></div>
+        </section>
+
+    
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: info@animalcatalog.com</p>
+        </section>
+        
+    </main>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <div id="popup-details"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
